@@ -78,3 +78,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.animated {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.viewingAnimated {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    transition: none;
+  }
+}
