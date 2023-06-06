@@ -16,7 +16,7 @@
   import smoothLoadAnimationAdder from "./smoothLoad";
 
   onMount(() => {
-    setTimeout(() => {
+    setInterval(() => {
       smoothLoadAnimationAdder("animated");
     }, 0);
   });
